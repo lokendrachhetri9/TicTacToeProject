@@ -1,13 +1,26 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        String[][] myArray = new String[3][3];
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the row of the array: ");
+        int row = scanner.nextInt();
+
+        System.out.print("Enter the coloumn of the array: ");
+        int coloumn = scanner.nextInt();
+        scanner.nextLine();
+
+        System.out.print("Enter the symbol: ");
+        String symbol = scanner.nextLine();
+
+        String[][] myArray = new String[row][coloumn];
 
         for (int i = 0; i < myArray.length; i++) {
             for (int j = 0; j < myArray.length; j++) {
-                myArray[i][j] = "*";
+                myArray[i][j] = symbol;
             }
         }
 
