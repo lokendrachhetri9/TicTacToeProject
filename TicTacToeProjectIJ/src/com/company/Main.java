@@ -18,14 +18,10 @@ public class Main {
 
         String[][] myArray = new String[row][coloumn];
 
-        for (int i = 0; i < myArray.length; i++) {
-            for (int j = 0; j < myArray.length; j++) {
+        //Initializing the array and printing.
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < coloumn; j++) {
                 myArray[i][j] = symbol;
-            }
-        }
-
-        for (int i = 0; i < myArray.length; i++) {
-            for (int j = 0; j < myArray.length; j++) {
                 System.out.print(myArray[i][j] + "\t");
             }
             System.out.println();
